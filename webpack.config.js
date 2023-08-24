@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
+    
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
@@ -41,7 +42,8 @@ module.exports = {
     contentBase: path.join(__dirname, './dist'),
     open: true,
     compress: true,
-    hot: true,
+    // hot: true,
+    // liveReload: true,
     port: 8080,
   },
   plugins: [
